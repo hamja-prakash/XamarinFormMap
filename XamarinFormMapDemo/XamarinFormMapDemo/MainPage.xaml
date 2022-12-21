@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamarinFormMapDemo.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ScrollView>
+        <StackLayout
+            Margin="0"
+            Padding="0"
+            HorizontalOptions="CenterAndExpand"
+            Spacing="20"
+            VerticalOptions="CenterAndExpand">
+            <Frame
+                Padding="5,0"
+                BackgroundColor="#1ABC9C"
+                CornerRadius="10"
+                HeightRequest="50">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    Text="Basic Map Demo"
+                    TextColor="White"
+                    VerticalTextAlignment="Center" />
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="FrmBasicMap_Tapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame
+                Padding="5,0"
+                BackgroundColor="#1ABC9C"
+                CornerRadius="10"
+                HeightRequest="50">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    Text="Near Uber Demo"
+                    TextColor="White"
+                    VerticalTextAlignment="Center" />
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="FrmNearbyUber_Tapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame
+                Padding="5,0"
+                BackgroundColor="#1ABC9C"
+                CornerRadius="10"
+                HeightRequest="50">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    Text="Near Uber Demo"
+                    TextColor="White"
+                    VerticalTextAlignment="Center" />
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="FrmNearbyUber_Tapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame
+                Padding="5,0"
+                BackgroundColor="#1ABC9C"
+                CornerRadius="10"
+                HeightRequest="50">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    Text="Essential Map"
+                    TextColor="White"
+                    VerticalTextAlignment="Center" />
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="FrmEssentialMap_Tapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame
+                Padding="5,0"
+                BackgroundColor="#1ABC9C"
+                CornerRadius="10"
+                HeightRequest="50">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    Text="Map Direction"
+                    TextColor="White"
+                    VerticalTextAlignment="Center" />
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="FrmMapDirection_Tapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame
+                Padding="5,0"
+                BackgroundColor="#1ABC9C"
+                CornerRadius="10"
+                HeightRequest="50">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    Text="Map Placemark"
+                    TextColor="White"
+                    VerticalTextAlignment="Center" />
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="FrmMapPlacemark_Tapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame
+                Padding="5,0"
+                BackgroundColor="#1ABC9C"
+                CornerRadius="10"
+                HeightRequest="50">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"
+                    Text="Dynamic Map"
+                    TextColor="White"
+                    VerticalTextAlignment="Center" />
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="FrmDaynamicMap_Tapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

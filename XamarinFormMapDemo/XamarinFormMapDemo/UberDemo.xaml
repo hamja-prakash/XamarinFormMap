@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamarinFormMapDemo.UberDemo"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+    <ScrollView>
+        <Grid
+            Margin="0"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="500" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <maps:Map
+                x:Name="map"
+                Grid.Row="0"
+                HasZoomEnabled="True" />
+
+            <Button
+                Grid.Row="1"
+                Margin="20"
+                Padding="0"
+                Clicked="Button_Clicked"
+                HeightRequest="50"
+                Text="Load Vehicles Near By"
+                VerticalOptions="EndAndExpand" />
+        </Grid>
+    </ScrollView>
+</ContentPage>

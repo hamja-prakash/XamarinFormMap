@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamarinFormMapDemo.DynamicMapDemo"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <Grid
+            Margin="20"
+            Padding="0"
+            HorizontalOptions="FillAndExpand"
+            RowSpacing="10"
+            VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Frame
+                Margin="0"
+                Padding="5,0"
+                BorderColor="LightGray"
+                CornerRadius="10"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Entry
+                    x:Name="txtLatitude"
+                    HorizontalOptions="FillAndExpand"
+                    Placeholder="Latitude"
+                    VerticalOptions="FillAndExpand" />
+            </Frame>
+
+            <Frame
+                Grid.Row="1"
+                Margin="0"
+                Padding="5,0"
+                BorderColor="LightGray"
+                CornerRadius="10"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Entry
+                    x:Name="txtLongitude"
+                    HorizontalOptions="FillAndExpand"
+                    Placeholder="Longitude"
+                    VerticalOptions="FillAndExpand" />
+            </Frame>
+
+            <Frame
+                x:Name="FrmFindLcn"
+                Grid.Row="2"
+                Margin="0"
+                Padding="5,0"
+                BackgroundColor="Blue"
+                CornerRadius="10"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    Text="Find Location"
+                    TextColor="White"
+                    VerticalOptions="FillAndExpand"
+                    VerticalTextAlignment="Center" />
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="FrmFindLocation_Tapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
